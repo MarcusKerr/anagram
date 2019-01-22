@@ -9,7 +9,11 @@ class WordExtractor
   end
 
   def build_bank(file)
-    words_file = File.open(file, 'r')
+    begin
+      words_file = File.open(file, 'r')
+    rescue Exception
+      raise 'This file does not exist'
+    end
     words_file.each { |line| @words << sanitize(line) }
     words_file.close
   end
