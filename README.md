@@ -5,7 +5,7 @@ An anagram is a word or phrase formed from another by rearranging its letters, e
 ## User Stories:
 
 ```
-As a feature of an app, 
+As a feature of an app,
 So that I can prevent users from inputting disallowed words.
 I would like to check whether or not a word is an anagram of a given set of words.
 
@@ -14,8 +14,8 @@ So that I can see if my word is valid,
 I would like to be able to be able to input words.
 
 As a user,
-So that I know whether or not my word was accepted,
-I would like a message telling my word was an anagram of the included words.
+So that I know whether or not my word was valid,
+I would like a message telling me if my word was an anagram of the included words.
 ```
 
 ## Brief:
