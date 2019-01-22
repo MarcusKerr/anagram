@@ -13,19 +13,28 @@ class WordExtractor
     exist?(file)
     @words_file.each { |line| @words << sanitize(line) }
     @words_file.close
+    @words.uniq
+    sort_by_length
   end
 
-  private 
+  private
 
   def exist?(file)
-    begin
-      @words_file = File.open(file, 'r')
-    rescue Exception
-      raise 'This file does not exist'
-    end
+    @words_file = File.open(file, 'r')
+  rescue Exception
+    raise 'This file does not exist'
   end
 
   def sanitize(line)
-    line.delete("\n")
+    line.strip
+  end
+
+  def sort_by_length
+    remove_whitespace
+    @words.sort_by!(&:length)
+  end
+
+  def remove_whitespace
+    @words.delete_at(0) if @words[0] == ''
   end
 end
