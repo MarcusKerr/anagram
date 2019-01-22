@@ -6,7 +6,7 @@ class Anagram
     @word_extractor = word_extractor
   end
 
-  def upload(filename)
+  def upload_words(filename)
     @word_extractor.build_bank(filename)
   end
 end
