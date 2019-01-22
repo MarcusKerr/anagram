@@ -5,7 +5,7 @@
 require 'anagram'
 
 describe Anagram do
-  let(:mock_word_extractor_instance) { double :word_extractor_instance, :build_bank }
+  let(:mock_word_extractor_instance) { double :word_extractor_instance }
   let(:mock_file_path) { 'filepath.txt' }
   let(:anagram) { described_class.new(mock_word_extractor_instance) }
 
