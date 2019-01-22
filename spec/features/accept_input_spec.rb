@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'Anagram'
+require 'anagram'
 
 describe Anagram do
   let(:anagram) { subject }

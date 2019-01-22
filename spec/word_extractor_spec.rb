@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'WordExtractor'
+require 'word_extractor'
 
 describe WordExtractor do
   let(:word_extractor) { subject }
