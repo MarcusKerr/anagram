@@ -70,7 +70,7 @@ Simplecov final coverage report:
 <img width="1439" alt="screenshot 2019-01-23 at 14 18 59" src="https://user-images.githubusercontent.com/15127871/51612705-e2ba1480-1f19-11e9-98ce-087a5e0cc107.png">
 
 
-## User Stories:
+## User Stories:
 
 ```
 As a feature of an app,
@@ -86,7 +86,7 @@ So that I know whether or not my word was valid,
 I would like a message telling me if my word was an anagram of the included words.
 ```
 
-### Technologies:
+## Technologies:
 
 * Ruby
 * Rspec - Teating framework for Feature and Unit tests
@@ -100,7 +100,7 @@ Task: Write a command line app in the language of your choice which satisfies th
 
 - As a feature of an app, I would like to check whether or not a word is an anagram of a given set of words so that I can prevent users from inputting disallowed words.
 
-### ACCEPTANCE CRITERIA
+## ACCEPTANCE CRITERIA
 
 1. The feature can run as a standalone application
 2. It takes a configurable list of words to check against
@@ -112,6 +112,6 @@ Task: Write a command line app in the language of your choice which satisfies th
 2. Sketched a diagram of my current understandig of the system.
 3. I focusd on the BDD cycle always writing a feature test first followed by unit tests, followed by business logic.
 
-## Next steps:
+## Next steps:
 
 - Refactor 'Anagram.find' further into smaller methods with single responsibility .
