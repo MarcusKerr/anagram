@@ -40,3 +40,10 @@ night
 tab	
 yap
 care
+alters
+alerts
+artels
+estral
+laster
+salter
+slater
