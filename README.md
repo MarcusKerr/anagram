@@ -49,6 +49,8 @@ $ ruby main.rb
 > test_words.txt
 > Enter your anagram (to exit enter 'STOP'):
 > alerts
+
+> Matched anagrams of 'alerts' are:
 > artels
 > estral
 > laster
