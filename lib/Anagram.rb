@@ -3,6 +3,7 @@
 require_relative 'word_extractor'
 class Anagram
   NO_MATCH_ERROR = 'No matches'
+  INVALID_FORMAT_ERROR = 'Enter a valid word with no digits or special characters'
 
   def initialize(word_extractor = WordExtractor.new)
     @word_extractor = word_extractor
@@ -13,6 +14,8 @@ class Anagram
   end
 
   def find(word)
+    raise INVALID_FORMAT_ERROR unless valid?(word)
+
     set_defaults(word)
     while @starting_index <= @ending_index
       this_word_num = sort_word_letters(@word_extractor.words[@starting_index])
@@ -23,6 +26,10 @@ class Anagram
   end
 
   private
+
+  def valid?(word)
+    word.match? /\A[a-zA-Z'-]*\z/
+  end
 
   def set_defaults(word)
     @matched_words = []
