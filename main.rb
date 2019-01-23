@@ -17,10 +17,8 @@ loop do
 rescue Exception => e
   puts e
 else
-
-  if !matched_words.empty?
-    puts "\nMatched anagrams of '#{word}' are:\n"
-    matched_words.each do |word|
-      puts word
-    end
+  puts "\nMatched anagrams of '#{word}' are:\n"
+  matched_words.each do |word|
+    puts word
+  end
 end
