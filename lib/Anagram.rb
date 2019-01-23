@@ -2,7 +2,7 @@
 
 require_relative 'word_extractor'
 class Anagram
-  NO_ANAGRAMS_ERROR = 'Could not find any anagrams of this word'
+  NO_MATCH_ERROR = 'No matches'
 
   def initialize(word_extractor = WordExtractor.new)
     @word_extractor = word_extractor
@@ -28,7 +28,7 @@ class Anagram
     @matched_words = []
     word = word.downcase
     @starting_index = @word_extractor.words.index { |word_item| word_item.length == word.length }
-    raise NO_ANAGRAMS_ERROR unless @starting_index
+    raise NO_MATCH_ERROR unless @starting_index
 
     @ending_index = @word_extractor.words.index { |word_item| word_item.length == word.length + 1 } || @word_extractor.words.length - 1
     @word_num = sort_word_letters(word)
