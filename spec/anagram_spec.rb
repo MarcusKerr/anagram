@@ -20,5 +20,12 @@ describe Anagram do
       anagram.upload_words(file_path)
       expect(anagram.find('god')).to eq ['dog']
     end
+
+    context 'word is not included' do
+      it 'it raises and error' do
+        anagram.upload_words(file_path)
+        expect { anagram.find('x') }.to raise_error('Could not find any anagrams of this word')
+      end
+    end
   end
 end

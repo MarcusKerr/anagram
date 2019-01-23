@@ -17,12 +17,10 @@ class Anagram
       @matched_words << @word_extractor.words[@starting_index] if this_word_num == @word_num
       @starting_index += 1
     end
-    matched_words
+    @matched_words
   end
 
-  private 
-
-  attr_reader :matched_words
+  private
 
   def set_defaults(word)
     @matched_words = []
@@ -35,5 +33,4 @@ class Anagram
   def get_numerical_value(word)
     word.unpack('U*').sum
   end
-
 end
