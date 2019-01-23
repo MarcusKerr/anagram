@@ -114,6 +114,13 @@ Task: Write a command line app in the language of your choice which satisfies th
 2. Sketched a diagram of my current understanding of the system.
 3. I focusd on the BDD cycle always writing a feature test first followed by unit tests, followed by business logic.
 
+I decided that the steps I wanted to take to solve the problem were:
+  - **Sort the list of given words by length** - This would make searching easier.
+  - **Set a starting index for the search** - I determined the starting index by finding the index of the first word in           the sorted arry of given words, that was the same length as the user's entered word.
+  - **Set an ending index for the search** - Index of the first word that was one greater than the user entered word, or index     of the last item in the array
+  - **Search between these two indices** - Searching only between ths starting and ending indices will save time.
+  - **Standardize and compare** - I arranged the letters of each word in alphabetical order, and compated this with the user's     entered word. If they matched I added the word to an array.
+
 ## Next steps:
 
 - Refactor 'Anagram.find' further into smaller methods with single responsibility .
