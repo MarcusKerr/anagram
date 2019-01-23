@@ -18,8 +18,10 @@ class Anagram
 
     set_defaults(word)
     while @starting_index <= @ending_index
-      this_word_num = sort_word_letters(@word_extractor.words[@starting_index])
-      @matched_words << @word_extractor.words[@starting_index] if this_word_num == @word_num
+      this_sorted_word = sort_word_letters(@word_extractor.words[@starting_index])
+      if this_sorted_word == @sorted_word && @word_extractor.words[@starting_index] != word
+        @matched_words << @word_extractor.words[@starting_index]
+      end
       @starting_index += 1
     end
     raise NO_MATCH_ERROR if @matched_words.empty?
@@ -40,7 +42,7 @@ class Anagram
     raise NO_MATCH_ERROR unless @starting_index
 
     @ending_index = @word_extractor.words.index { |word_item| word_item.length == word.length + 1 } || @word_extractor.words.length - 1
-    @word_num = sort_word_letters(word)
+    @sorted_word = sort_word_letters(word)
   end
 
   def sort_word_letters(word)
