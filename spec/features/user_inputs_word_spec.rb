@@ -6,6 +6,7 @@ describe Anagram do
   let(:anagram) { subject }
 
   it 'allows user to input a word to seach for anagrams' do
-    expect(anagram.find('dog')).to_not raise_error
+    anagram.upload_words('test_words.txt')
+    expect { anagram.find('goat') }.to_not raise_error
   end
 end

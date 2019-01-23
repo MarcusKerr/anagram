@@ -3,8 +3,8 @@
 require 'anagram'
 
 describe Anagram do
-  let(:mock_word_extractor_instance) { double :word_extractor_instance, build_bank: mock_words_array, words: mock_words_array}
-  let(:mock_words_array) { ["dog", "goat", "fish"] }
+  let(:mock_word_extractor_instance) { double :word_extractor_instance, build_bank: mock_words_array, words: mock_words_array }
+  let(:mock_words_array) { %w[dog goat fish] }
   let(:file_path) { 'test_words.txt' }
   let(:anagram) { described_class.new(mock_word_extractor_instance) }
 
