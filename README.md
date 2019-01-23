@@ -100,7 +100,7 @@ Task: Write a command line app in the language of your choice which satisfies th
 
 - As a feature of an app, I would like to check whether or not a word is an anagram of a given set of words so that I can prevent users from inputting disallowed words.
 
-## ACCEPTANCE CRITERIA
+### Acceptance criteria: 
 
 1. The feature can run as a standalone application
 2. It takes a configurable list of words to check against
