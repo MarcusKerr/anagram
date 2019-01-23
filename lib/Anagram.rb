@@ -15,7 +15,7 @@ class Anagram
   def find(word)
     set_defaults(word)
     while @starting_index <= @ending_index
-      this_word_num = get_numerical_value(@word_extractor.words[@starting_index])
+      this_word_num = sort_word_letters(@word_extractor.words[@starting_index])
       @matched_words << @word_extractor.words[@starting_index] if this_word_num == @word_num
       @starting_index += 1
     end
@@ -31,10 +31,10 @@ class Anagram
     raise NO_ANAGRAMS_ERROR unless @starting_index
 
     @ending_index = @word_extractor.words.index { |word_item| word_item.length == word.length + 1 } || @word_extractor.words.length - 1
-    @word_num = get_numerical_value(word)
+    @word_num = sort_word_letters(word)
   end
 
-  def get_numerical_value(word)
-    word.unpack('U*').sum
+  def sort_word_letters(word)
+    word.chars.sort.join('')
   end
 end

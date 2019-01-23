@@ -26,7 +26,7 @@ class WordExtractor
   end
 
   def sanitize(line)
-    line.strip
+    line.strip.downcase
   end
 
   def sort_by_length
