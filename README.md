@@ -94,7 +94,7 @@ I would like a message telling me if my word was an anagram of the included word
 ```
 
 ## Diagram:
-![anagram diagram](https://user-images.githubusercontent.com/15127871/51629048-89181100-1f3e-11e9-8c3f-fa3255b75c5a.png)
+![anagram diagram](https://user-images.githubusercontent.com/15127871/51629265-10658480-1f3f-11e9-9e94-610ea885a0af.png)
 
 ## Technologies:
 
