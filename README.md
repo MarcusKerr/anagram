@@ -95,8 +95,6 @@ I would like a message telling me if my word was an anagram of the included word
 
 ## Diagram:
 
-![anagram diagram](https://user-images.githubusercontent.com/15127871/51627963-a26b8e00-1f3b-11e9-936a-a3f07164b34c.png)
-
 
 ## Technologies:
 
