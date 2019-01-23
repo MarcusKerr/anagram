@@ -5,23 +5,6 @@ require './lib/anagram'
 anagram = Anagram.new
 STOPPING_CONDITION = 'STOP'
 
-def enter_file
-  loop do
-    puts "Enter a file of words (to exit enter 'STOP'):"
-    filename = gets.chomp
-    break if filename == STOPPING_CONDITION
-
-    begin
-      anagram.upload_words(filename)
-    rescue Exception => e
-      puts e
-    else
-      enter_word
-      break
-    end
-  end
-end
-
 def enter_word
   loop do
     puts "\nEnter your anagram (to exit enter 'STOP'):"
@@ -39,4 +22,17 @@ def enter_word
   end
 end
 
-enter_file
+loop do
+  puts "Enter a file of words (to exit enter 'STOP'):"
+  filename = gets.chomp
+  break if filename == STOPPING_CONDITION
+
+  begin
+    anagram.upload_words(filename)
+  rescue Exception => e
+    puts e
+  else
+    enter_word
+    break
+  end
+end
