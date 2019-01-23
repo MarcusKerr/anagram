@@ -2,7 +2,7 @@
 
 require './lib/anagram'
 
-anagram = Anagram.new
+@anagram = Anagram.new
 STOPPING_CONDITION = 'STOP'
 
 def enter_word
@@ -11,7 +11,7 @@ def enter_word
     word = gets.chomp
     break if word == STOPPING_CONDITION
 
-    matched_words = anagram.find(word)
+    matched_words = @anagram.find(word)
   rescue Exception => e
     puts e
   else
@@ -28,7 +28,7 @@ loop do
   break if filename == STOPPING_CONDITION
 
   begin
-    anagram.upload_words(filename)
+    @anagram.upload_words(filename)
   rescue Exception => e
     puts e
   else

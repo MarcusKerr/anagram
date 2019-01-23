@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative 'word_extractor'
+
+# Finds anagrams of entered word
 class Anagram
   NO_MATCH_ERROR = 'No matches'
   INVALID_FORMAT_ERROR = 'Enter a valid word with no digits, special characters or spaces'
