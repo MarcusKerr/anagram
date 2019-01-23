@@ -109,7 +109,7 @@ Task: Write a command line app in the language of your choice which satisfies th
 ## My approach:
 
 1. I refined the brief into clear and clear and concise user stories.
-2. Sketched a diagram of my current understandig of the system.
+2. Sketched a diagram of my current understanding of the system.
 3. I focusd on the BDD cycle always writing a feature test first followed by unit tests, followed by business logic.
 
 ## Next steps:
