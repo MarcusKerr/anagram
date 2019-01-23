@@ -34,6 +34,11 @@ $ ruby main.rb
 
 4. You will then see a list of the anagrams.
 
+```
+> Matched anagrams of 'toga' are:
+> goat
+```
+
 5. Enter 'STOP' at any time to exit the app.
 
 ```
@@ -123,4 +128,5 @@ I decided that the steps I wanted to take to solve the problem were:
 
 ## Next steps:
 
-- Refactor 'Anagram.find' further into smaller methods with single responsibility .
+- Refactor 'Anagram.find' further into smaller methods with single responsibility.
+- I'm going to rename some of the variable names, they are starting to confuse me!
