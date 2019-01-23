@@ -2,6 +2,9 @@
 
 An anagram is a word or phrase formed from another by rearranging its letters, ex. SILENT is an anagram of LISTEN.
 
+![scrabble](https://user-images.githubusercontent.com/15127871/51637600-1fa2fd00-1f54-11e9-884b-0084ce25c79d.jpg)
+
+
 ## Quickstart:
 
 **How to install:**<br>
