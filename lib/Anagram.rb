@@ -15,13 +15,13 @@ class Anagram
     @word_extractor.build_bank(filename)
   end
 
-  def find(word)
-    raise INVALID_FORMAT_ERROR unless valid?(word)
+  def find(search_word)
+    raise INVALID_FORMAT_ERROR unless valid?(search_word)
 
-    set_defaults(word)
+    set_defaults(search_word)
     while @starting_index <= @ending_index
       this_sorted_word = sort_word_letters(@word_extractor.words[@starting_index])
-      if this_sorted_word == @sorted_word && @word_extractor.words[@starting_index] != word
+      if this_sorted_word == @sorted_word && @word_extractor.words[@starting_index] != search_word
         @matched_words << @word_extractor.words[@starting_index]
       end
       @starting_index += 1

@@ -46,4 +46,3 @@ artels
 estral
 laster
 salter
-slater

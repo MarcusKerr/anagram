@@ -3,8 +3,9 @@
 # Extract words from file and add to array
 class WordExtractor
   attr_reader :words
-  attr_accessor :words_file
-
+  
+  NO_FILE_ERROR = 'This file does not exist'
+  
   def initialize
     @words = []
   end
@@ -22,7 +23,7 @@ class WordExtractor
   def exist?(file)
     @words_file = File.open(file, 'r')
   rescue Exception
-    raise 'This file does not exist'
+    raise NO_FILE_ERROR
   end
 
   def sanitize(line)

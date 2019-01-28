@@ -7,15 +7,15 @@ STOPPING_CONDITION = 'STOP'
 
 def enter_word
   loop do
-    puts "\nEnter your anagram (to exit enter 'STOP'):"
-    word = gets.chomp
-    break if word == STOPPING_CONDITION
+    puts "\nEnter your search word (to exit enter 'STOP'):"
+    search_word = gets.chomp
+    break if search_word == STOPPING_CONDITION
 
-    matched_words = @anagram.find(word)
+    matched_words = @anagram.find(search_word)
   rescue Exception => e
     puts e
   else
-    puts "\nMatched anagrams of '#{word}' are:\n"
+    puts "\nMatched anagrams of '#{search_word}' are:\n"
     matched_words.each do |word|
       puts word
     end

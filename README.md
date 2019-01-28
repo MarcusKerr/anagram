@@ -7,42 +7,43 @@ An anagram is a word or phrase formed from another by rearranging its letters, e
 
 ## Quickstart:
 
-**How to install:**<br>
+**How to install:**
+<br>
 
 1. Clone this project `https://github.com/MarcusKerr/anagram.git`
 2. Change into the project directory `cd anagram`
-3. Run `bundle install` to add depencencies
+3. Run `bundle install` to install the depencencies
 
 **How to use:**
 <br>
-1. In the commant line run `ruby main.rb`
+**1.** In the command line run `ruby main.rb`
 
 ```
 $ ruby main.rb
 ```
 
-2. The app will ask you to enter a file:
+**2.** The app will ask you to enter a file:
 
 ```
 > Enter a file of words (to exit enter 'STOP'):
 > test_words.txt
 ```
 
-3. You will then be asked to enter your anagram:
+**3.** You will then be asked to enter your search word:
 
 ```
-> Enter your anagram (to exit enter 'STOP'):
+> Enter your search word (to exit enter 'STOP'):
 > toga
 ```
 
-4. You will then see a list of the anagrams.
+**4.** You will then see a list of the anagrams.
 
 ```
 > Matched anagrams of 'toga' are:
 > goat
 ```
 
-5. Enter 'STOP' at any time to exit the app.
+**5.** Enter 'STOP' at any time to exit the app.
 
 ```
 > Enter your anagram (to exit enter 'STOP'):
@@ -53,8 +54,10 @@ $ ruby main.rb
 <br>
 ```
 $ ruby main.rb
+
 > Enter a file of words (to exit enter 'STOP'):
 > test_words.txt
+
 > Enter your anagram (to exit enter 'STOP'):
 > alerts
 
@@ -64,10 +67,13 @@ $ ruby main.rb
 > laster
 > salter
 > slater
+
+> Enter your anagram (to exit enter 'STOP'):
+> STOP
+
 ```
 
-**How to run tests:**
-<br>
+**How to run tests:**<br>
 Feature tests and unit tests can both be executed with the command `rspec`:
 
 ```
@@ -97,7 +103,7 @@ I would like a message telling me if my word was an anagram of the included word
 ```
 
 ## Diagram:
-![anagram diagram](https://user-images.githubusercontent.com/15127871/51637812-a5bf4380-1f54-11e9-97c7-d49f09859abc.png)
+![anagram diagram](https://user-images.githubusercontent.com/15127871/51859837-002f1a00-2330-11e9-90db-dc90388f5b8b.png)
 
 ## Technologies:
 
